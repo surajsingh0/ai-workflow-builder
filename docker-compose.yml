@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: ai-workflow-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/aiworkflow
+      # Pass through API Keys from host environment or .env file
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - SERPAPI_API_KEY=${SERPAPI_API_KEY}
+    depends_on:
+      - db
+    networks:
+      - ai-workflow-net
+
+  frontend:
+    build: ./web
+    container_name: ai-workflow-frontend
+    ports:
+      - "3000:80" # Map host 3000 to container 80 (nginx)
+    depends_on:
+      - backend
+    networks:
+      - ai-workflow-net
+
+  db:
+    image: postgres:15-alpine
+    container_name: ai-workflow-db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=aiworkflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - ai-workflow-net
+
+volumes:
+  postgres_data:
+
+networks:
+  ai-workflow-net:
+    driver: bridge
