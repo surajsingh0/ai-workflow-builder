@@ -1,0 +1,38 @@
+# ========================================
+# Node.js / Frontend Specific
+# ========================================
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Vite
+.vite/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Storybook
+storybook-static/
+
+# PWA / Service Worker
+sw.js
+workbox-*.js
+
+# Local only
+*.local
