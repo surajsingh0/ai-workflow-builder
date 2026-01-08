@@ -1,0 +1,30 @@
+﻿# Core Framework
+fastapi==0.128.0
+uvicorn==0.40.0
+starlette==0.50.0
+
+# Database
+SQLAlchemy==2.0.45
+psycopg2-binary==2.9.11
+
+# Validation
+pydantic==2.12.5
+python-multipart==0.0.21
+
+# AI/ML
+openai==2.14.0
+chromadb==1.4.0
+PyMuPDF==1.26.7
+
+# Web Search
+google-search-results
+
+# Cloud Storage
+boto3==1.42.23
+
+# Environment
+python-dotenv==1.2.1
+
+# HTTP Client
+httpx==0.28.1
+requests==2.32.5

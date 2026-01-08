@@ -1,0 +1,45 @@
+# ========================================
+# Python / Backend Specific
+# ========================================
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+
+# Local SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# Local file uploads (fallback when R2 not configured)
+uploads/
+
+# ChromaDB vector store data
+chroma_db/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# MyPy
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
