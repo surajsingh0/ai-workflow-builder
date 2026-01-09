@@ -2,6 +2,10 @@
 
 A Full-Stack No-Code/Low-Code web application that enables users to visually create and interact with intelligent workflows. Connect Knowledge Bases, LLMs, and Web Search to build powerful AI agents.
 
+<p align="center">
+  <img src="preview.png" alt="AI Workflow Builder Preview" width="100%">
+</p>
+
 ## Features
 
 - **Visual Workflow Builder**: Drag-and-drop interface using React Flow.
