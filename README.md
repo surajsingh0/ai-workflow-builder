@@ -2,8 +2,6 @@
 
 A Full-Stack No-Code/Low-Code web application that enables users to visually create and interact with intelligent workflows. Connect Knowledge Bases, LLMs, and Web Search to build powerful AI agents.
 
-![Demo](https://via.placeholder.com/800x400?text=AI+Workflow+Builder+Demo)
-
 ## Features
 
 - **Visual Workflow Builder**: Drag-and-drop interface using React Flow.
@@ -76,7 +74,7 @@ A Full-Stack No-Code/Low-Code web application that enables users to visually cre
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/ai-workflow-builder.git
+   git clone https://github.com/surajsingh0/ai-workflow-builder.git
    cd ai-workflow-builder
    ```
 
